@@ -17,7 +17,7 @@ class AfishaTest {
 
 
         String[] actual = manager.findAll();
-        String[] expected = {"Бладшот","Вперед","Отель Белград"};
+        String[] expected = {"Бладшот", "Вперед", "Отель Белград"};
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -45,6 +45,7 @@ class AfishaTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testFindLastWhenLimitLessThanSize2() {
         Afisha manager = new Afisha(3);
@@ -68,6 +69,7 @@ class AfishaTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testFindLastWhenLimitMoreThanSize() {
         Afisha manager = new Afisha();
@@ -79,7 +81,6 @@ class AfishaTest {
         manager.add(movie1);
         manager.add(movie2);
         manager.add(movie3);
-
 
 
         String[] actual = manager.findLast();

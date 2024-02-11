@@ -5,6 +5,7 @@ public class Afisha {
     public Afisha(int limit) {
         this.limit = limit;
     }
+
     public Afisha() {
         limit = 5;
     }
@@ -14,12 +15,12 @@ public class Afisha {
         for (int i = 0; i < movies.length; i++) {
             tmp[i] = movies[i];
         }
-        tmp[tmp.length -1] = movie;
+        tmp[tmp.length - 1] = movie;
         movies = tmp;
     }
 
     public String[] findAll() {
-    return movies;
+        return movies;
     }
 
     public String[] findLast() {
@@ -29,7 +30,7 @@ public class Afisha {
         } else {
             resultLength = movies.length;
         }
-  String[] result = new String[resultLength];
+        String[] result = new String[resultLength];
         for (int i = 0; i < resultLength; i++) {
             result[i] = movies[movies.length - 1 - i];
         }
